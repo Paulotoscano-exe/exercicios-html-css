@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        section{
+            text-align: center;
+        }
+        .Devs {
+            display: inline-table;
+            background-color: rgb(255, 255, 255);
+            height: 180px;
+            width: 180px;
+            /* border: 1px solid black; */
+            border-radius: 8px;
+            margin: 50px;
+            text-align: center;
+
+        }
+        #Titulo{
+            text-align: center;
+            border-radius: 30px;
+        }
+        .Devs > .bio {
+            display: none;
+            color: rgb(0, 0, 0);
+        }
+
+        /* div:hover {
+            background-color: rgba(43, 214, 226, 0.705);
+        } */
+        div:hover > .bio {
+            display: block;
+        }
+        .links {
+            text-decoration: none; 
+            color: mediumblue;
+        }
+    </style>
+</head>
+<body style="background-color: #78f033b6;">
+    <section>
+        <p id="Titulo">Desenvolvedores</p>
+        <div class="Devs">
+            <p><a class="links" href="https://www.instagram.com/paulooow.zip/" target="_blank" rel="external">Paulo</a></p>
+            <p class="bio"></p>
+            <img src="imagens/logo.png" alt="logo">
+        </div>
+        <div class="Devs">
+            <p><a class="links" href="https://www.instagram.com/arturjacome2012/" target="_blank" rel="external">Artur</a></p>
+            <p class="bio">O vendedor, marketeiro, engenheiro, carpinteiro. O cara que se responsabilizou pela documentação do projeot. Palmas pra o grande Artur, vulgo carne seca</p>
+        </div>
+    </section>
+</body>
+</html>
